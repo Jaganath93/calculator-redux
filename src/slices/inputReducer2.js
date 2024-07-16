@@ -7,7 +7,7 @@ export const setInput2 = (value)=>({
  
  
  export const inputReducer2 = (state= '',action)=>{
-     if(action.type === 'setNumber2') return action.payload;
+     if(action.type === 'setNumber2') return state + action.payload;
      else return state
  }
  
